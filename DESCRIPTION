@@ -1,0 +1,18 @@
+Package: research
+Type: Package
+Title: Helpful functions for making research easier
+Version: 0.1.0
+Author: writertyper
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This package is intended to help users to quickly run a few
+    commands and get instant results. This package uses functions that are
+    wrappers around other functions and combinations of different functions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    magrittr,
+    purrr,
+    tibble
+RoxygenNote: 7.1.2
