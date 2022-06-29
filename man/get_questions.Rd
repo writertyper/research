@@ -21,6 +21,7 @@ If \code{df=FALSE} the function pulls all questions from the qsf without further
 	Class: One of three values: Question, Choices, Answers.
 	Language : The language code of the question, choice or answer.
 	QuestionType : Value from [['Payload']][['QuestionType']]
+	DataExportTag : Value from [['Payload]][['DataExportTag']]
 	PrimaryAttribute: Value from [['PrimaryAttribute']]
 	SecondaryAttribute: Value from [['SecondaryAttribute']]
 	TextEntry: Text-entry allowed?

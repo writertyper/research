@@ -15,6 +15,7 @@
 #' 	Class: One of three values: Question, Choices, Answers.
 #' 	Language : The language code of the question, choice or answer.
 #' 	QuestionType : Value from [['Payload']][['QuestionType']]
+#' 	DataExportTag : Value from [['Payload]][['DataExportTag']]
 #' 	PrimaryAttribute: Value from [['PrimaryAttribute']]
 #' 	SecondaryAttribute: Value from [['SecondaryAttribute']]
 #' 	TextEntry: Text-entry allowed?
@@ -45,6 +46,7 @@ sq_as_df <- function(l){
   df <- dplyr::select(df, "ID", dplyr::everything(), -"value")
   df <- tibble::add_column(df,
                    QuestionType=purrr::pluck(l, "Payload", "QuestionType"),
+                   DataExportTag=purrr::pluck(l, "Payload", "DataExportTag"),
                    PrimaryAttribute=purrr::pluck(l, "PrimaryAttribute"),
                    SecondaryAttribute=purrr::pluck(l, "SecondaryAttribute"))
   return(df)
