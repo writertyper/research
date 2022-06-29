@@ -9,14 +9,11 @@ fre(.data, var)
 \arguments{
 \item{.data}{A dataset.}
 
-\item{.var}{A variable.}
+\item{var}{A variable.}
 }
 \value{
 The frequency of a variable.
 }
 \description{
 Get labels from a dataset
-}
-\examples{
-fre(mtcars, "carb")
 }
